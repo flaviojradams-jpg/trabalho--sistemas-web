@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petcare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .img-produto {
+            height: 200px;
+            object-fit: contain;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+            transition: 0.2s;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">Petcare</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Produtos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">Cadastro</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+    <main class="container">
+        <section class="mb-5" id="produtos">
+            <h2 class="mb-4">Produtos</h2>
+
+            <h3 class="mb-3">Alimentício</h3>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 p-3 border border-1 shadow-sm">
+                        <img src="Imagens/Racao-canina.webp" class="card-img-top img-produto" alt="Ração para cães - bravo cordeiro e arroz 10kg">
+                        <div class="card-body">
+                            <h5 class="card-title">Ração para cães</h5>
+                            <p class="card-text small">Bravo cordeiro e arroz 10kg</p>
+                            <p class="fw-bold">R$ 80,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 p-3 border border-1 shadow-sm">
+                        <img src="Imagens/racao_umida_whiskas_sache_carne_gatos_adultos.webp" class="card-img-top img-produto" alt="Ração úmida para gatos - Whiskas carne ao molho">
+                        <div class="card-body">
+                            <h5 class="card-title">Ração úmida para gatos</h5>
+                            <p class="card-text small">Whiskas carne ao molho 85g</p>
+                            <p class="fw-bold">R$ 5,00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="mb-3">Acessórios</h3>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 p-3 border border-1 shadow-sm">
+                        <img src="Imagens/cama_iglu_impermeavel_caminha_pet_2_em_1_m_graffite.webp" class="card-img-top img-produto" alt="Cama iglu impermeável média - grafite">
+                        <div class="card-body">
+                            <h5 class="card-title">Cama iglu impermeável média</h5>
+                            <p class="card-text small">Cor grafite</p>
+                            <p class="fw-bold">R$ 120,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 p-3 border border-1 shadow-sm">
+                        <img src="Imagens/bolinha-cachorro.jpg" class="card-img-top img-produto" alt="Bolinha pet espinhos macios">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolinha pet</h5>
+                            <p class="card-text small">Espinhos macios</p>
+                            <p class="fw-bold">R$ 20,00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="mb-3">Higiene</h3>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 p-3 border border-1 shadow-sm">
+                        <img src="Imagens/Areia Higienica MyHug Milho e Mandioca Granulos Finos 4kg.webp" class="card-img-top img-produto" alt="Areia higiênica MyHug milho e mandioca">
+                        <div class="card-body">
+                            <h5 class="card-title">Areia higiênica</h5>
+                            <p class="card-text small">MyHug milho e mandioca</p>
+                            <p class="fw-bold">R$ 60,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 p-3 border border-1 shadow-sm">
+                        <img src="Imagens/tapete-higienico-pet-fresh-petmais-8.webp" class="card-img-top img-produto" alt="Tapete higiênico PetFresh 30 unidades">
+                        <div class="card-body">
+                            <h5 class="card-title">Tapete higiênico</h5>
+                            <p class="card-text small">PetFresh 30 unidades</p>
+                            <p class="fw-bold">R$ 40,00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5" id="servicos">
+            <h2 class="mb-4">Serviços</h2>
+
+            <div class="card p-4 mb-3 border border-1 shadow-sm">
+                <h4>Banho e tosa</h4>
+                <p class="mb-1">Valor: R$ 80,00</p>
+                <p class="mb-0">Inclui tele-busca.</p>
+            </div>
+
+            <div class="card p-4 mb-3 border border-1 shadow-sm">
+                <h4>Consulta veterinária</h4>
+                <p class="mb-0">Valor: R$ 120,00</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container mt-5 mb-4">
+        <section>
+            <h2>Informações</h2>
+            <p>E-mail: petshop-petcare@outlook.com</p>
+            <p>Contato: (51) 99999-9999</p>
+            <p>Feito por: Flávio Marcelo Adams Júnior - Disciplina de fundamentos de sistemas web</p>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

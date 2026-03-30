@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Petcare</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Petcare</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#produtos">Produtos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#servicos">Serviços</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="cadastro.html">Cadastro</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <h2>Cadastro do Cliente e Pet</h2>
+
+        <form onsubmit="return mostrarMensagem()">
+
+            <div class="card p-4 mb-4">
+                <h3>Dados do Cliente</h3>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome:</label>
+                            <input id="nome" type="text" class="form-control" placeholder="Digite seu nome" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="cpf" class="form-label">CPF:</label>
+                            <input id="cpf" type="text" class="form-control" placeholder="Digite seu CPF" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input id="email" type="email" class="form-control" placeholder="Digite seu email" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone:</label>
+                            <input id="telefone" type="tel" class="form-control" placeholder="Digite seu telefone">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="endereco" class="form-label">Endereço:</label>
+                    <input id="endereco" type="text" class="form-control" placeholder="Rua, número, bairro" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Sexo:</label>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" id="masculino" required>
+                        <label class="form-check-label" for="masculino">Masculino</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" id="feminino">
+                        <label class="form-check-label" for="feminino">Feminino</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" id="outro">
+                        <label class="form-check-label" for="outro">Outro</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-4 mb-4">
+                <h3>Dados do Pet</h3>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="petnome" class="form-label">Nome do pet:</label>
+                            <input id="petnome" type="text" class="form-control" placeholder="Digite o nome do pet" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="raca" class="form-label">Raça:</label>
+                            <input id="raca" type="text" class="form-control" placeholder="Digite a raça do pet">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="idade" class="form-label">Idade:</label>
+                    <input id="idade" type="number" min="0" class="form-control" placeholder="Digite a idade do pet">
+                </div>
+            </div>
+
+            <div class="card p-4 mb-4">
+                <h3>Serviço</h3>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="servico" id="banho" required>
+                    <label class="form-check-label" for="banho">Banho</label>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="servico" id="tosa">
+                    <label class="form-check-label" for="tosa">Tosa</label>
+                </div>
+
+                <h3>Método de atendimento</h3>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="metodo" id="tele" required>
+                    <label class="form-check-label" for="tele">Tele-busca</label>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="radio" name="metodo" id="local">
+                    <label class="form-check-label" for="local">Levar no local</label>
+                </div>
+            </div>
+
+            <div class="card p-4 mb-4">
+                <h3>Agendamento</h3>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="data" class="form-label">Data:</label>
+                            <input id="data" type="date" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="hora" class="form-label">Hora:</label>
+                            <input id="hora" type="time" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-3">Agendar</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer class="container mt-5 mb-4">
+        <section>
+            <h2>Informações</h2>
+            <p>E-mail: petshop-petcare@outlook.com</p>
+            <p>Contato: (51) 99999-9999</p>
+            <p>Feito por: Flávio Marcelo Adams Júnior - Disciplina de fundamentos de sistemas web</p>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function mostrarMensagem() {
+            let nome = document.getElementById("nome").value;
+
+            if (nome === "") {
+                alert("Por favor, preencha o nome!");
+                return false;
+            }
+
+            alert("Agendamento realizado com sucesso!");
+            return false;
+        }
+    </script>
+
+</body>
+</html>
